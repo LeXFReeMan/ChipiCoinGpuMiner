@@ -38,7 +38,6 @@ export const givers10000 = [
 ];
 
 export const givers100000 = [
-    { address: "EQC22NBqhY40-EnFyRM7NqabQAl8UDm5vlBmU9hp8UuiOY3X", reward: 100000 },
     { address: "EQDqkSjKoZ7FzqBnLKyQQ32YdIPDA3hBJ-RsE2cB3GuBcGeh", reward: 100000 },
     { address: "EQDsmgQI6ohDF_61KzEoM079onAYJYmWNMaaRyYITt2hTa5V", reward: 100000 },
     { address: "EQDankjYlhFt_bTiwLAOxIgI5UytTp7rutKtBjBlRODVPViH", reward: 100000 },

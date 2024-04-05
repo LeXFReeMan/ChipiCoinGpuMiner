@@ -36,7 +36,7 @@ const args = arg({
 })
 
 
-let givers = givers1000
+let givers = givers10000
 if (args['--givers']) {
     const val = args['--givers']
     const allowed = [100, 1000]
@@ -58,12 +58,12 @@ if (args['--givers']) {
             console.log('Using givers 10,000')
             break
         case 100000:
-                givers = givers100000
-                console.log('Using givers 100,000')
-                break
+            givers = givers100000
+            console.log('Using givers 100,000')
+            break
     }
 } else {
-    console.log('Using givers 1 000')
+    console.log('Using givers 10 000')
 }
 
 let bin = '.\\pow-miner-cuda.exe'
@@ -329,7 +329,7 @@ async function sendMinedBoc(
             secretKey: keyPair.secretKey,
             messages: [internal({
                 to: giverAddress,
-                value: toNano('0.05'),
+                value: toNano('0.07'),
                 bounce: true,
                 body: boc,
             })],
@@ -388,7 +388,7 @@ async function sendMinedBoc(
                 secretKey: keyPair.secretKey,
                 messages: [internal({
                     to: giverAddress,
-                    value: toNano('0.05'),
+                    value: toNano('0.07'),
                     bounce: true,
                     body: boc,
                 })],
